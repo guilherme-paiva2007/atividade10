@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>HTML - Revisão</title>
+    </head>
+    <body id="body-html">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./html.html">HTML</a></li>
+                <li><a href="./css.html">CSS</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>O que é HTML?</h1>
+            <p><i>Hyper Text Markup Language</i>. É uma linguagem de marcação voltada para o desenvolvimentos de páginas web.</p>
+            <h2>Como é estruturado?</h2>
+            <p>Através de tags, as quais tem diversas funcionalidades, como carregar textos, imagens, tabelas ou outras tags.</p>
+
+            <h2>Tags HTML Básicas</h2>
+            <h3>Parágrafos</h3>
+            <p><b class="tag"><<i></i>p></b> - Blocos de texto em linha, assim como este.</p>
+            
+            <h3>Listas</h3>
+            <p><b class="tag"><<i></i>ul></b> - Cria uma lista não ordenada.</p>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+            <p><b class="tag"><<i></i>ol></b> - Cria uma lista ordenada.</p>
+            <ol>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+            </ol>
+            <p><b class="tag"><<i></i>li></b> - Indica os elementos da lista.</p>
+            <ul>
+                <li>A <- <b class="tag"><<i></i>li></b></li>
+                <li>B <- <b class="tag"><<i></i>li></b></li>
+                <li>C <- <b class="tag"><<i></i>li></b></li>
+            </ul>
+
+            <h3>Tabelas</h3>
+            <p><b class="tag"><<i></i>table></b> - Cria uma tabela.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>A</th>
+                        <th>A</th>
+                        <th>A</th>
+                    </tr>
+                    <tr>
+                        <td>B</td>
+                        <td>B</td>
+                        <td>B</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Dentro dela, utiliza outras tags para construir a tabela:</p>
+            <ul>
+                <li><b class="tag"><<i></i>tr></b> - Adiciona uma linha à tabela.</li>
+                <li><b class="tag"><<i></i>td></b> - Adiciona um elemento com informações à tabela.</li>
+                <li><b class="tag"><<i></i>th></b> - Adiciona um elemento de título à coluna ou linha.</li>
+            </ul>
+            <div id="tabelas-demonstracao">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><b class="tag"><<i></i>th></b></th>
+                            <th><b class="tag"><<i></i>th></b></th>
+                            <th><b class="tag"><<i></i>th></b></th>
+                        </tr>
+                        <tr>
+                            <td><b class="tag"><<i></i>td></b></td>
+                            <td><b class="tag"><<i></i>td></b></td>
+                            <td><b class="tag"><<i></i>td></b></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="tabela-invisivel">
+                    <tbody>
+                        <tr>
+                            <td><- <b class="tag"><<i></i>tr></td>
+                        </tr>
+                        <tr>
+                            <td><- <b class="tag"><<i></i>tr></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Imagens</h3>
+            <p><b class="tag"><<i></i>img></b> - Insere uma imagem.</p>
+            <div id="div-imagem">
+                <img src="imgs/gato.jpg">
+            </div>
+            <p>Ela requer outros atributos dentro da tag:</p>
+            <p><b class="codigo"><b class="tag"><<i></i>img <b class="propriedade">src=<b class="valor">"[localização da imagem]"</b>></b></b></b></p>
+
+            <h3>Links</h3>
+            <p><b class="tag"><<i></i>a></b> - Permite a ancoragem com outra página.</p>
+            <p>
+                <a id="link-nao-estilizado" href="https://www.google.com" target="_blank">Link</a>
+            </p>
+            <p>Também requer outro atributo para funcionar:</p>
+            <p><b class="codigo"><b class="tag"><<i></i>a <b class="propriedade">href=<b class="valor">"[link de destino]"</b>></b></b></b></p>
+        </main>
+    </body>
+</html>

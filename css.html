@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>CSS - Revisão</title>
+    </head>
+    <body id="body-css">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./html.html">HTML</a></li>
+                <li><a href="./css.html">CSS</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>O que é CSS?</h1>
+            <p><i>Cascate Style Sheets</i>. É uma linguagem que permite a estilização de HTML.</p>
+            <h2>Como é estruturado?</h2>
+            <p>Utilizando seletores para atingir grupos de elementos e alterar suas propriedades (e valores).</p>
+            <p><b class="codigo">
+                <b class="seletor">
+                    seletor {
+                        <b class="propriedade">propriedade:</b> <b class="valor">valor</b>;
+                    }
+                </b>
+            </b></p>
+            <p>O <b class="seletor">seletor</b> indica qual grupo de elementos vai ser o alvo, sendo uma tag ou classe, ou um elemento individual, através de id.</p>
+            <p>A <b class="propriedade">propriedade</b> indica qual das propriedades vai ser modificada com o <b class="valor">valor</b> inserido.</p>
+            <p><br></p>
+            <p><b class="seletor">Classes</b> podem ser adicionadas à elementos no documento HTML, para serem identificadas como um grupo. Chamada por <b class="seletor">.classe</b>.</p>
+            <p><b class="seletor">IDs</b> são usados para nomear um elemento em específico. Chamado por <b class="seletor">#id</b>.</p>
+            <p><br></p>
+            <p>CSS funciona em cascata, fazendo com que as propriedades alteradas possam ser reutilizadas em grupos, respeitando certa hierarquia.</p>
+            <p>Exemplo de propriedades, classes e ids em prática:</p>
+            <div id="imagens-exemplo-css">
+                <div id="imagens-codigos">
+                    <img src="./imgs/codigo1.PNG" alt="">
+                    <img src="./imgs/codigo2.PNG" alt="">
+                </div>
+                <img src="./imgs/exemplo.PNG" alt="">
+            </div>
+        </main>
+    </body>
+</html>

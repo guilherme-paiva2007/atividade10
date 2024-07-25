@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.3s;
+}
+
+
+
+/* ESTRUTURA */
+body {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(212, 212, 212);
+    margin-left: 70px;
+}
+
+nav {
+    /* background-color: rgba(0, 0, 255, 0.5); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0, 0.1) 80%, rgb(0, 0, 0, 0.15));
+    position: fixed;
+    height: 100vh;
+    left: 0;
+}
+
+#body-html nav {
+    background-image: linear-gradient(to right, rgba(215, 97, 0, 0.5) 80%, rgba(215, 97, 0, 0.55));
+}
+
+#body-css nav {
+    background-image: linear-gradient(to right, rgba(0, 176, 215, 0.5) 80%, rgba(0, 176, 215, 0.55));
+}
+
+#body-inicio main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#body-html, #body-css {
+    overflow-x: hidden;
+}
+
+
+
+/* ELEMENTOS */
+p {}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+    
+ul {
+    list-style-type: none;
+}
+        
+h1, h2, h3 {        
+    margin-top: 12px;
+}
+
+h4, h5, h6 {
+    margin-top: 6px;
+}
+
+/* Início (Página) */
+.nav-links {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-links li {
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.nav-links li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+    display: block;
+    width: 100%;
+}
+
+#legenda-inicio {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+}
+
+/* HTML (Página) */
+#body-html h1, #body-html h2, #body-html h3, #body-html p {
+    text-align: center;
+}
+
+#body-html h1 {
+    font-size: 38px;
+}
+
+#body-html main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+}
+
+#body-html main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: disc;
+}
+
+#body-html main ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    margin: 10px auto;
+}
+
+table, td, th {
+    border: 2px black solid;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px black solid;
+}
+
+td, th {
+    padding: 3px;
+}
+
+#tabelas-demonstracao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 2px;
+}
+
+#tabelas-demonstracao table {
+    margin: 0;
+}
+
+#tabela-invisivel, #tabela-invisivel * {
+    border: 0;
+}
+
+#div-imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#body-html img {
+    width: 25%;
+    margin: 12px;
+}
+
+#link-nao-estilizado {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* CSS (Página) */
+#body-css h1, #body-css h2, #body-css h3, #body-css p {
+    text-align: center;
+}
+
+#body-css main {
+    margin-left: 60px;
+}
+
+#body-css img {
+    border: dodgerblue solid 3px;
+}
+
+#imagens-exemplo-css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagens-codigos {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+/* Códigos */
+.tag {
+    color: green;
+}
+
+.seletor {
+    color: rgb(198, 129, 0);
+}
+
+.propriedade {
+    color: rgb(92, 137, 165);
+}
+
+.valor {
+    color: rgb(160, 80, 51);
+}
+
+.codigo {
+    background-color: rgb(56, 59, 72);
+}
